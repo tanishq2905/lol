@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Catalogue - BookVerse</title>
+    <style>
+        body { font-family: 'Segoe UI'; background: #f2f2f2; }
+        h1 { text-align: center; padding: 20px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .book {
+            background: white; padding: 15px; border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+        .book:hover { transform: translateY(-5px); }
+        .book img { width: 100%; height: 260px; object-fit: cover; border-radius: 10px; }
+        .btn {
+            display: inline-block; background: #222; color: white; padding: 10px 15px;
+            text-decoration: none; margin-top: 10px; border-radius: 5px;
+        }
+        .btn:hover { background: #444; }
+    </style>
+</head>
+<body>
+
+<h1>📖 Book Catalogue</h1>
+
+<div class="grid">
+
+    <div class="book">
+        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&w=500&q=60">
+        <h3>The Silent Patient</h3>
+        <p>Author: Alex Michaelides</p>
+        <p><b>Price: $20</b></p>
+        <a class="btn" href="cart.html">Add to Cart</a>
+    </div>
+
+    <div class="book">
+        <img src="https://images.unsplash.com/photo-1586480440143-ffd39f64cd8a?auto=format&fit=crop&w=500&q=60">
+        <h3>Atomic Habits</h3>
+        <p>Author: James Clear</p>
+        <p><b>Price: $18</b></p>
+        <a class="btn" href="cart.html">Add to Cart</a>
+    </div>
+
+    <div class="book">
+        <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=500&q=60">
+        <h3>Harry Potter</h3>
+        <p>Author: J.K. Rowling</p>
+        <p><b>Price: $30</b></p>
+        <a class="btn" href="cart.html">Add to Cart</a>
+    </div>
+
+</div>
+
+</body>
+</html>
